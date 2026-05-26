@@ -11,12 +11,16 @@ body {
 .container {
   background: #080b16;
 
-  height: 100vh;
+  min-height: 100vh;
 
   padding: 30px 70px;
 
   color: white;
+
+  overflow: hidden;
 }
+
+/* NAVBAR */
 
 nav {
   display: flex;
@@ -24,14 +28,34 @@ nav {
   justify-content: space-between;
 
   align-items: center;
+
+  position: relative;
 }
 
-ul {
+.logo {
+  font-size: 34px;
+
+  font-weight: bold;
+}
+
+.nav-links {
   display: flex;
 
   gap: 40px;
 
   list-style: none;
+
+  align-items: center;
+}
+
+.nav-links li {
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  color: #3f38ff;
 }
 
 nav button {
@@ -44,7 +68,25 @@ nav button {
   padding: 10px 20px;
 
   border-radius: 8px;
+
+  cursor: pointer;
 }
+
+.menu-btn {
+  display: none;
+
+  font-size: 30px;
+
+  background: none;
+
+  border: none;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+/* HERO */
 
 .hero {
   display: flex;
@@ -53,7 +95,9 @@ nav button {
 
   align-items: center;
 
-  height: 80vh;
+  min-height: 80vh;
+
+  gap: 50px;
 }
 
 .left {
@@ -90,117 +134,85 @@ nav button {
   font-size: 18px;
 
   cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.start:hover {
+  background: #2b25d9;
+}
+
+.right {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
 }
 
 .right img {
   width: 600px;
-}
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
 
-    text-align: center;
-
-    gap: 40px;
-  }
-
-  .left {
-    width: 100%;
-  }
-
-  .left h1 {
-    font-size: 40px;
-
-    line-height: 50px;
-  }
-
-  .right img {
-    width: 280px;
-  }
-
-  .navbar {
-    flex-direction: column;
-
-    gap: 20px;
-  }
-
-  .navbar ul {
-    flex-wrap: wrap;
-
-    justify-content: center;
-  }
-
-  .stats {
-    justify-content: center;
-
-    flex-wrap: wrap;
-  }
+  max-width: 100%;
 }
 
-@media (max-width: 480px) {
-  .left h1 {
-    font-size: 32px;
+/* TABLET */
 
-    line-height: 42px;
-  }
-
-  .start {
-    width: 100%;
-  }
-
-  .demo {
-    width: 100%;
-  }
-
-  .buttons {
-    flex-direction: column;
-  }
-}
-/* Tablet */
-
-@media screen and (max-width: 1024px) {
-  nav {
-    padding: 20px 40px;
-  }
-
-  .hero {
-    padding: 40px;
-
-    gap: 40px;
+@media (max-width: 1024px) {
+  .container {
+    padding: 30px 40px;
   }
 
   .left h1 {
     font-size: 45px;
 
-    line-height: 55px;
+    line-height: 58px;
   }
 
   .right img {
-    width: 350px;
+    width: 400px;
   }
 }
 
-/* Mobile */
+/* MOBILE */
 
-@media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column;
-
-    gap: 20px;
-
+@media (max-width: 768px) {
+  .container {
     padding: 20px;
   }
 
-  nav ul {
-    display: flex;
+  .menu-btn {
+    display: block;
 
-    flex-wrap: wrap;
+    width: auto;
+  }
 
-    justify-content: center;
+  .nav-links {
+    display: none;
+
+    position: absolute;
+
+    top: 70px;
+
+    left: 0;
+
+    width: 100%;
+
+    background: #101624;
+
+    flex-direction: column;
+
+    padding: 25px;
 
     gap: 20px;
 
-    padding: 0;
+    border-radius: 10px;
+
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 
   .hero {
@@ -208,9 +220,7 @@ nav button {
 
     text-align: center;
 
-    padding: 30px 20px;
-
-    gap: 50px;
+    padding-top: 50px;
   }
 
   .left {
@@ -218,59 +228,39 @@ nav button {
   }
 
   .left h1 {
-    font-size: 34px;
+    font-size: 38px;
 
-    line-height: 45px;
+    line-height: 48px;
   }
 
   .left p {
     font-size: 16px;
   }
 
-  .right {
-    width: 100%;
-
-    display: flex;
-
-    justify-content: center;
-  }
-
   .right img {
     width: 280px;
-
-    max-width: 100%;
   }
 
   .start {
     width: 100%;
-
-    padding: 15px;
-
-    font-size: 16px;
   }
 
-  button {
-    width: 100%;
+  nav button {
+    width: auto;
   }
 }
 
-/* Small Mobile */
+/* SMALL MOBILE */
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .logo {
-    font-size: 24px;
-  }
-
-  nav ul {
-    flex-direction: column;
-
-    gap: 12px;
+    font-size: 26px;
   }
 
   .left h1 {
-    font-size: 28px;
+    font-size: 30px;
 
-    line-height: 38px;
+    line-height: 40px;
   }
 
   .left p {

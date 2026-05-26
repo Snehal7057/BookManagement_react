@@ -1,15 +1,23 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import folder from "../assets/folder.png";
 import "./../css/home.css";
+
 function Home() {
   const navigate = useNavigate();
+
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="container">
       <nav>
         <h2 className="logo">BookNest</h2>
 
-        <ul>
+        <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+        </button>
+
+        <ul className={menuOpen ? "nav-links active" : "nav-links"}>
           <li>Home</li>
 
           <li>How it Works</li>
@@ -17,9 +25,11 @@ function Home() {
           <li>FAQ</li>
 
           <li>Pricing</li>
-        </ul>
 
-        <button>Login</button>
+          <li>
+            <button>Login</button>
+          </li>
+        </ul>
       </nav>
 
       <div className="hero">
