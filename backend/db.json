@@ -1,0 +1,29 @@
+{
+  "books": [
+    {
+      "id": "4",
+      "title": "Java Complete Reference",
+      "author": "Herbert Schildt",
+      "genre": "Programming",
+      "year": 2021,
+      "status": "Available"
+    },
+    {
+      "title": "Shyamachi Aai",
+      "author": "Sane Guruji",
+      "genre": "Emotional",
+      "year": "2023",
+      "status": "Available",
+      "id": "R8XYvJKcBpA"
+    },
+    {
+      "title": "Chaava",
+      "author": "Shivaji Sawant",
+      "genre": "Novel",
+      "year": "1980",
+      "status": "Available",
+      "id": "Bu8jdh5xXQs"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
