@@ -23,6 +23,30 @@
       "year": "1980",
       "status": "Available",
       "id": "Bu8jdh5xXQs"
+    },
+    {
+      "title": "The Great Gatsby",
+      "author": "F.Scot",
+      "genre": "Tradegy",
+      "year": "1925",
+      "status": "Available",
+      "id": "MybTAcw9rsY"
+    },
+    {
+      "title": "The Great Gatsby",
+      "author": "F.Scot",
+      "genre": "Tradegy",
+      "year": "1925",
+      "status": "Available",
+      "id": "B2X6DAAukTw"
+    },
+    {
+      "title": "The Great Gatsby",
+      "author": "F.Scot",
+      "genre": "Tradegy",
+      "year": "1925",
+      "status": "Available",
+      "id": "psh1k6tkuec"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -95,90 +95,195 @@ nav button {
 .right img {
   width: 600px;
 }
-@media(max-width:768px){
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
 
-.hero{
+    text-align: center;
 
-flex-direction:column;
+    gap: 40px;
+  }
 
-text-align:center;
+  .left {
+    width: 100%;
+  }
 
-gap:40px;
+  .left h1 {
+    font-size: 40px;
 
+    line-height: 50px;
+  }
+
+  .right img {
+    width: 280px;
+  }
+
+  .navbar {
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+
+  .stats {
+    justify-content: center;
+
+    flex-wrap: wrap;
+  }
 }
 
-.left{
+@media (max-width: 480px) {
+  .left h1 {
+    font-size: 32px;
 
-width:100%;
+    line-height: 42px;
+  }
 
+  .start {
+    width: 100%;
+  }
+
+  .demo {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
+/* Tablet */
+
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 20px 40px;
+  }
+
+  .hero {
+    padding: 40px;
+
+    gap: 40px;
+  }
+
+  .left h1 {
+    font-size: 45px;
+
+    line-height: 55px;
+  }
+
+  .right img {
+    width: 350px;
+  }
 }
 
-.left h1{
+/* Mobile */
 
-font-size:40px;
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
 
-line-height:50px;
+    gap: 20px;
 
+    padding: 20px;
+  }
+
+  nav ul {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    padding: 0;
+  }
+
+  .hero {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    gap: 50px;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .left h1 {
+    font-size: 34px;
+
+    line-height: 45px;
+  }
+
+  .left p {
+    font-size: 16px;
+  }
+
+  .right {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .right img {
+    width: 280px;
+
+    max-width: 100%;
+  }
+
+  .start {
+    width: 100%;
+
+    padding: 15px;
+
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%;
+  }
 }
 
-.right img{
+/* Small Mobile */
 
-width:280px;
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 24px;
+  }
 
-}
+  nav ul {
+    flex-direction: column;
 
-.navbar{
+    gap: 12px;
+  }
 
-flex-direction:column;
+  .left h1 {
+    font-size: 28px;
 
-gap:20px;
+    line-height: 38px;
+  }
 
-}
+  .left p {
+    font-size: 14px;
+  }
 
-.navbar ul{
+  .right img {
+    width: 220px;
+  }
 
-flex-wrap:wrap;
+  .start {
+    font-size: 15px;
 
-justify-content:center;
-
-}
-
-.stats{
-
-justify-content:center;
-
-flex-wrap:wrap;
-
-}
-
-}
-
-@media(max-width:480px){
-
-.left h1{
-
-font-size:32px;
-
-line-height:42px;
-
-}
-
-.start{
-
-width:100%;
-
-}
-
-.demo{
-
-width:100%;
-
-}
-
-.buttons{
-
-flex-direction:column;
-
-}
-
+    padding: 12px;
+  }
 }
