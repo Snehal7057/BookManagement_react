@@ -17,14 +17,6 @@
       "id": "R8XYvJKcBpA"
     },
     {
-      "title": "Chaava",
-      "author": "Shivaji Sawant",
-      "genre": "Novel",
-      "year": "1980",
-      "status": "Available",
-      "id": "Bu8jdh5xXQs"
-    },
-    {
       "title": "The Great Gatsby",
       "author": "F.Scot",
       "genre": "Tradegy",
@@ -47,6 +39,14 @@
       "year": "1925",
       "status": "Available",
       "id": "psh1k6tkuec"
+    },
+    {
+      "title": "SSS",
+      "author": "AA",
+      "genre": "ss",
+      "year": "2021",
+      "status": "Available",
+      "id": "eouhqnufHiU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -30,7 +30,9 @@ setCurrentPage
 
   async function fetchBooks() {
     try {
-      const response = await axios.get("http://localhost:3000/books");
+      const response = await axios.get(
+        "https://6a19a86b489e4715751a52ad.mockapi.io/api/v1/book",
+      );
 
       setBooks(response.data);
     } catch (error) {
@@ -48,7 +50,9 @@ setCurrentPage
     }
 
     try {
-      await axios.delete(`http://localhost:3000/books/${id}`);
+      await axios.delete(
+        `https://6a19a86b489e4715751a52ad.mockapi.io/api/v1/book/${id}`,
+      );
 
       fetchBooks();
 
@@ -67,7 +71,7 @@ setCurrentPage
   async function updateBook() {
     try {
       await axios.put(
-        `http://localhost:3000/books/${editingBook.id}`,
+        `https://6a19a86b489e4715751a52ad.mockapi.io/api/v1/book/${editingBook.id}`,
 
         editingBook,
       );

@@ -16,7 +16,9 @@ function DashboardCards({ refresh }) {
 
   async function fetchStats() {
     try {
-      const response = await axios.get("http://localhost:3000/books");
+      const response = await axios.get(
+        "https://6a19a86b489e4715751a52ad.mockapi.io/api/v1/book",
+      );
 
       const books = response.data;
 
